@@ -9,7 +9,7 @@ apt-get -y install gettext apache2 jekyll ruby-jekyll-remote-theme ruby-jekyll-c
                    iputils-ping telnet
 
 
-chmod 777 /var/www/html
+chmod -R 777 /var/www/html
 
 # Allow access to composer global install scripts
 echo 'export PATH="$PATH:$WORKDIR/vendor/bin:/home/user/.config/composer/vendor/bin:$WORKDIR/node_modules/.bin:"' >> /etc/kick_bashrc.d/path
