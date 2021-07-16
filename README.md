@@ -26,6 +26,18 @@ Document Index:
 Kickstart uses a fixed version of Ckit to keep the features freeze within
 a version.
 
-## Install additional packages
+## Usage
+
+Demo <kbd>.kick.yml</kbd>
+
+```yaml
+version: 1
+from: "nfra/kickstart-flavor-jekyll:1.0"
+command:
+  build:
+    - "jekyll build -s /opt/docs -d /var/www/html"
+  dev:
+    - "D:jekyll build -s /opt/docs -d /var/www/html --watch --force_polling --drafts"
+```
 
 
