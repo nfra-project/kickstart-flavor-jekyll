@@ -10,3 +10,4 @@ command:
 
   test_it:
     - "IT:vim"
+    -
