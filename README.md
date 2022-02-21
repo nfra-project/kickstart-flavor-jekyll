@@ -32,12 +32,14 @@ Demo <kbd>.kick.yml</kbd>
 
 ```yaml
 version: 1
-from: "nfra/kickstart-flavor-jekyll:1.0"
+from: "ghcr.io/nfra-project/kickstart-flavor-jekyll:1.0"
+ports: "80;4000;4100"
+
 command:
   build:
     - "jekyll build -s /opt/docs -d /var/www/html"
   dev:
-    - "D:jekyll build -s /opt/docs -d /var/www/html --watch --force_polling --drafts"
+    - "jekyll serve -s /opt/docs -d /var/www/html --livereload --port 4000 --livereload-port 4100 --host 0.0.0.0"
 ```
 
 
