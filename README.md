@@ -38,8 +38,25 @@ ports: "80;4000;4100"
 command:
   build:
     - "jekyll build -s /opt/docs -d /var/www/html"
+  
+  sass:
+    - "sass /opt/docs/_scss/theme.scss /opt/docs/assets/theme.css"
+  
   dev:
     - "jekyll serve -s /opt/docs -d /var/www/html --livereload --port 4000 --livereload-port 4100 --host 0.0.0.0"
 ```
 
+Resources:
+- [Jekyll command line options](https://jekyllrb.com/docs/configuration/options/)
 
+
+## Faq
+
+### Jekyll takes very long to compile page (>3 sec)
+
+This might be because of sass compiling. Instead of using the buildin compiler
+just run the sass command specified above.
+
+```
+sass [input] [output]
+```
