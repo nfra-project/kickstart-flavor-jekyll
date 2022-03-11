@@ -6,7 +6,8 @@ set -e
 apt-get update
 
 apt-get -y install gettext apache2 psmisc jekyll ruby-jekyll-remote-theme ruby-jekyll-coffeescript ruby-jekyll-sass-converter \
-                   iputils-ping telnet ruby-jekyll-optional-front-matter ruby-jekyll-sitemap ruby-jekyll-seo-tag ruby-jekyll-feed
+                   iputils-ping telnet ruby-jekyll-optional-front-matter ruby-jekyll-sitemap ruby-jekyll-seo-tag ruby-jekyll-feed \
+                   imagemagick
 
 
 chmod -R 777 /var/www/html
