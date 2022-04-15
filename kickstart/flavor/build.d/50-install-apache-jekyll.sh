@@ -5,15 +5,22 @@ set -e
 
 apt-get update
 
-apt-get -y install gettext apache2 psmisc jekyll ruby-jekyll-remote-theme ruby-jekyll-coffeescript ruby-jekyll-sass-converter \
-                   iputils-ping telnet ruby-jekyll-optional-front-matter ruby-jekyll-sitemap ruby-jekyll-seo-tag ruby-jekyll-feed \
-                   imagemagick
+apt-get -y install gettext apache2 psmisc \
+                   iputils-ping telnet  \
+                   imagemagick ruby-full build-essential zlib1g-dev
+
+
+export GEM_HOME="/usr/bin/gems"
+gem install jekyll bundler
+
+
 
 
 chmod -R 777 /var/www/html
 
 # Allow access to composer global install scripts
-echo 'export PATH="$PATH:$WORKDIR/vendor/bin:/home/user/.config/composer/vendor/bin:$WORKDIR/node_modules/.bin:"' >> /etc/kick_bashrc.d/path
+echo 'export PATH="$PATH:$WORKDIR/vendor/bin:/home/user/.config/composer/vendor/bin:$WORKDIR/node_modules/.bin:/usr/bin/gems/bin:"' >> /etc/kick_bashrc.d/path
+echo 'export GEM_HOME="/usr/bin/gems"' >> /etc/kick_bashrc.d/path
 
 touch /home/user/.bashrc.kickstart
 chmod 755 /home/user/.bashrc.kickstart
