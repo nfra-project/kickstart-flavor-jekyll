@@ -18,10 +18,11 @@ Document Index:
 
 *Use -min images in Dockerfile and main image in .kick.yml*
 
-| Tag         | OS                            | Branch     | CKit | Docs |
-|-------------|-------------------------------|------------|------|------|
-| 1.0         | Ubuntu 20.04 (LTS)            | 1.0-stable | 1.4  | [Readme](https://github.com/nfra-project/kickstart-flavor-jekyll/tree/1.0-stable) |
-| unstable    | Ubuntu 20.04 (master), PHP8   | main     | unstable  | [Readme](https://github.com/nfra-project/kickstart-flavor-jekyll/) |
+| Tag      | OS                          | Branch | CKit | Docs |
+|----------|-----------------------------|--|------|------|
+| 1.0      | Ubuntu 20.04 (LTS)          | 1.0-stable | 1.4  | [Readme](https://github.com/nfra-project/kickstart-flavor-jekyll/tree/1.0-stable) |
+| 2.0      | Ubuntu 22.04 (LTS)          | release/2.0 | 1.4  | [Readme](https://github.com/nfra-project/kickstart-flavor-jekyll/tree/release/2.0) |
+| unstable | Ubuntu 20.04 (master), PHP8 | main | unstable  | [Readme](https://github.com/nfra-project/kickstart-flavor-jekyll/) |
 
 Kickstart uses a fixed version of Ckit to keep the features freeze within
 a version.
