@@ -11,7 +11,7 @@ apt-get -y install gettext apache2 psmisc jekyll ruby-jekyll-remote-theme ruby-j
 
 
 chmod -R 777 /var/www/html
-npm install --global webpack-cli typescript ts-loader sass-loader node-sass
+npm install --global webpack-cli typescript ts-loader sass-loader node-sass sass webpack
 
 # Allow access to composer global install scripts
 echo 'export PATH="$PATH:$WORKDIR/vendor/bin:/home/user/.config/composer/vendor/bin:$WORKDIR/node_modules/.bin:"' >> /etc/kick_bashrc.d/path
