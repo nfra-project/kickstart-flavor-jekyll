@@ -11,7 +11,8 @@ name: UNSTABLE_build_and_push_to_github
 ## https://securitylab.github.com/research/github-actions-preventing-pwn-requests/
 on:
   push:
-
+    branches:
+      - main
 
 jobs:
   build_and_push_github:
