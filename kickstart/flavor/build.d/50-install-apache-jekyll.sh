@@ -17,7 +17,7 @@ gem install jekyll bundler jekyll-optional-front-matter jekyll-sitemap
 # Install Node 20 and npm:
 curl -sL https://deb.nodesource.com/setup_20.x | sudo bash -
 sudo apt-get install -y nodejs
-
+sudo npm install -g npm
 
 chmod -R 777 /var/www/html
 
