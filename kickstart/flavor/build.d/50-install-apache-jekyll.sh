@@ -14,12 +14,12 @@ apt-get -y install gettext apache2 psmisc \
 export GEM_HOME="/usr/bin/gems"
 gem install jekyll bundler jekyll-optional-front-matter jekyll-sitemap
 
-# Install Node 20 and npm:
+# Install Node 20 and npm: See https://github.com/nodesource/distributions?tab=readme-ov-file#ubuntu-versions
 curl -sL https://deb.nodesource.com/setup_23.x | sudo bash -
 sudo apt-get install -y nodejs
-sudo npm install -g npm yarn
+sudo npm install -g npm yarn pnpm
 
-sudo composer global require lack/kindergarden
+composer global require lack/kindergarden:^1.0.3
 
 chmod -R 777 /var/www/html
 
