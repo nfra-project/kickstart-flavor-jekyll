@@ -19,7 +19,7 @@ curl -sL https://deb.nodesource.com/setup_23.x | sudo bash -
 sudo apt-get install -y nodejs
 sudo npm install -g npm yarn pnpm
 
-composer global require lack/kindergarden:^1.0.3
+sudo -u user composer global require lack/kindergarden:^1.0.3
 
 chmod -R 777 /var/www/html
 
