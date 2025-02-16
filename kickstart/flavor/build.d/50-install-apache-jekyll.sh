@@ -15,7 +15,7 @@ export GEM_HOME="/usr/bin/gems"
 gem install jekyll bundler jekyll-optional-front-matter jekyll-sitemap
 
 # Install Node 20 and npm:
-curl -sL https://deb.nodesource.com/setup_20.x | sudo bash -
+curl -sL https://deb.nodesource.com/setup_23.x | sudo bash -
 sudo apt-get install -y nodejs
 sudo npm install -g npm yarn
 
@@ -31,3 +31,7 @@ touch /home/user/.bashrc.kickstart
 chmod 755 /home/user/.bashrc.kickstart
 
 echo ". /home/user/.bashrc.kickstart" >> /home/user/.bashrc
+
+
+## Ubuntu 23.04 -> change user ubuntu to uid 999
+usermod -u 999 ubuntu
