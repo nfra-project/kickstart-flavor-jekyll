@@ -35,7 +35,7 @@ Demo <kbd>.kick.yml</kbd>
 
 ```yaml
 version: 1
-from: "ghcr.io/nfra-project/kickstart-flavor-jekyll:1.0"
+from: "ghcr.io/nfra-project/kickstart-flavor-jekyll:3.0"
 ports: "80;4000;4100"
 
 command:
