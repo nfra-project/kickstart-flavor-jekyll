@@ -18,6 +18,7 @@ Document Index:
 
 *Use -min images in Dockerfile and main image in .kick.yml*
 
+
 | Tag      | OS                          | Branch      | CKit     | Docs                                                                               |
 |----------|-----------------------------|-------------|----------|------------------------------------------------------------------------------------|
 | 1.0      | Ubuntu 20.04 (LTS)          | 1.0-stable  | 1.4      | [Readme](https://github.com/nfra-project/kickstart-flavor-jekyll/tree/1.0-stable)  |
