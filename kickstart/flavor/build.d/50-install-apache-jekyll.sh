@@ -36,3 +36,4 @@ echo ". /home/user/.bashrc.kickstart" >> /home/user/.bashrc
 
 ## Ubuntu 23.04 -> change user ubuntu to uid 999
 usermod -u 999 ubuntu
+
