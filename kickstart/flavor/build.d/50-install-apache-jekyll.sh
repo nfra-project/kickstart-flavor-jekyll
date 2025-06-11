@@ -12,7 +12,7 @@ apt-get -y install gettext apache2 psmisc \
 
 
 export GEM_HOME="/usr/bin/gems"
-gem install jekyll bundler jekyll-optional-front-matter jekyll-sitemap
+gem install jekyll bundler jekyll-optional-front-matter jekyll-sitemap jekyll-polyglot jekyll-paginate jekyll-redirect-from jekyll-lazy-load-image
 
 # Install Node 20 and npm: See https://github.com/nodesource/distributions?tab=readme-ov-file#ubuntu-versions
 curl -sL https://deb.nodesource.com/setup_23.x | sudo bash -
