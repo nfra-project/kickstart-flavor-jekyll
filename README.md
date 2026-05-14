@@ -18,13 +18,13 @@ Document Index:
 
 *Use -min images in Dockerfile and main image in .kick.yml*
 
-| Tag      | OS                          | Branch      | CKit     | Docs                                                                               |
-|----------|-----------------------------|-------------|----------|------------------------------------------------------------------------------------|
-| 1.0      | Ubuntu 20.04 (LTS)          | 1.0-stable  | 1.4      | [Readme](https://github.com/nfra-project/kickstart-flavor-jekyll/tree/1.0-stable)  |
-| 2.0      | Ubuntu 22.04 (LTS)          | release/2.0 | 1.4      | [Readme](https://github.com/nfra-project/kickstart-flavor-jekyll/tree/release/2.0) |
-| 2.1      | Ubuntu 22.04 (LTS)          | release/2.1 | 1.5      | [Readme](https://github.com/nfra-project/kickstart-flavor-jekyll/tree/release/2.1) |
-| 3.0      | Ubuntu 24.04 (LTS)          | release/3.0 | 1.5      | [Readme](https://github.com/nfra-project/kickstart-flavor-jekyll/tree/release/3.0)
-| unstable | Ubuntu 24.04 (master), PHP8 | main        | unstable | [Readme](https://github.com/nfra-project/kickstart-flavor-jekyll/)                 |
+| Tag      | OS                                     | Branch      | CKit     | Docs                                                                               |
+|----------|----------------------------------------|-------------|----------|------------------------------------------------------------------------------------|
+| 1.0      | Ubuntu 20.04 (LTS)                     | 1.0-stable  | 1.4      | [Readme](https://github.com/nfra-project/kickstart-flavor-jekyll/tree/1.0-stable)  |
+| 2.0      | Ubuntu 22.04 (LTS)                     | release/2.0 | 1.4      | [Readme](https://github.com/nfra-project/kickstart-flavor-jekyll/tree/release/2.0) |
+| 2.1      | Ubuntu 22.04 (LTS)                     | release/2.1 | 1.5      | [Readme](https://github.com/nfra-project/kickstart-flavor-jekyll/tree/release/2.1) |
+| 3.0      | Ubuntu 24.04 (LTS)                     | release/3.0 | 1.5      | [Readme](https://github.com/nfra-project/kickstart-flavor-jekyll/tree/release/3.0)
+| unstable | Ubuntu 24.04 (master), PI Coding Agent | main        | unstable | [Readme](https://github.com/nfra-project/kickstart-flavor-jekyll/)                 |
 
 Kickstart uses a fixed version of Ckit to keep the features freeze within
 a version.
@@ -56,7 +56,7 @@ Resources:
 ## Tools
 
 - [KinderGarden installed](https://www.github.com/lack-project/lack-kindergarden)
-
+- [PI Coding Agent](http://pi.dev)
 
 ## Faq
 
