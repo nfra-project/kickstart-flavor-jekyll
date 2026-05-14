@@ -19,6 +19,14 @@ curl -sL https://deb.nodesource.com/setup_25.x | sudo bash -
 sudo apt-get install -y nodejs
 sudo npm install -g npm yarn pnpm
 
+# Install PI Coding Agent
+npm install -g @earendil-works/pi-coding-agent
+# Run post-instlall script of agent
+pi --help > /dev/null
+
+
+
+
 # Install kindergarden as user to avoid permission issues
 sudo -u user composer global require lack/kindergarden:^1.0.17
 
@@ -32,7 +40,7 @@ touch /home/user/.bashrc.kickstart
 chmod 755 /home/user/.bashrc.kickstart
 
 echo ". /home/user/.bashrc.kickstart" >> /home/user/.bashrc
-
+echo 'export OPENAI_API_KEY="$(cat /var/run/secrets/open_ai 2>/dev/null || true)' >> /home/user/.bashrc
 
 ## Ubuntu 23.04 -> change user ubuntu to uid 999
 usermod -u 999 ubuntu
