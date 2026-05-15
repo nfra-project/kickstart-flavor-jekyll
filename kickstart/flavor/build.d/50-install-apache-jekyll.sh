@@ -21,9 +21,8 @@ sudo npm install -g npm yarn pnpm
 
 # Install PI Coding Agent
 npm install -g @earendil-works/pi-coding-agent
-# Run post-instlall script of agent
-pi --help > /dev/null
-
+# Install Tools for pi
+sudo apt install -y ripgrep fd-find
 
 
 
