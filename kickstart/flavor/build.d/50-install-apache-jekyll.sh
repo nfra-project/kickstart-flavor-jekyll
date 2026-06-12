@@ -23,7 +23,7 @@ sudo npm install -g npm yarn pnpm
 npm install -g @earendil-works/pi-coding-agent
 # Install Tools for pi
 sudo apt install -y ripgrep fd-find
-
+pi install npm:pi-smart-fetch
 
 
 # Install kindergarden as user to avoid permission issues
