@@ -45,3 +45,4 @@ echo 'export OPENAI_API_KEY="$(cat /var/run/secrets/open_ai 2>/dev/null || true)
 
 ## Ubuntu 23.04 -> change user ubuntu to uid 999
 usermod -u 999 ubuntu
+
