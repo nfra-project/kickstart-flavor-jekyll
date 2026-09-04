@@ -35,7 +35,8 @@ sudo -u user -H sh -c '
   printf "%s\n" \
     "{" \
     "  \"defaultProvider\": \"openai\"," \
-    "  \"defaultModel\": \"gpt-5.6-luna\"," \
+    "  \"defaultModel\": \"gpt-5.6-sol\"," \
+    "  \"defaultThinkingLevel\": \"low\"," \
     "  \"defaultProjectTrust\": \"always\"" \
     "}" > "$HOME/.pi/agent/settings.json"
 '
