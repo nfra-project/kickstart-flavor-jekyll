@@ -15,5 +15,5 @@ ADD /kickstart /kickstart
 # Do not put env config vars here - put them in prepare.d/
 
 
-RUN chmod -R 755 /kickstart && /kickstart/flavor/build.sh
+RUN chmod -R 755 /kickstart && /bin/bash /kickstart/flavor/build.sh
 ENTRYPOINT ["/kickstart/run/entrypoint.sh"]
