@@ -7,7 +7,7 @@ apt-get update
 
 apt-get -y install gettext apache2 psmisc \
                    iputils-ping telnet  \
-                   imagemagick ruby-full build-essential zlib1g-dev \
+                   imagemagick ruby-full make gcc g++ libc6-dev dpkg-dev libcrypt-dev zlib1g-dev \
                    php8.5 php8.5-curl php8.5-http php8.5-raphf php8.5-yaml composer linkchecker
 
 export GEM_HOME="/usr/bin/gems"
