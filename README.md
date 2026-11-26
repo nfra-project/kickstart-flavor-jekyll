@@ -25,6 +25,7 @@ Document Index:
 | 2.1      | Ubuntu 22.04 (LTS)                     | release/2.1 | 1.5      | [Readme](https://github.com/nfra-project/kickstart-flavor-jekyll/tree/release/2.1) |
 | 3.0      | Ubuntu 24.04 (LTS)                     | release/3.0 | 1.5      | [Readme](https://github.com/nfra-project/kickstart-flavor-jekyll/tree/release/3.0) |
 | 4.0      | Ubuntu 24.04 (LTS)                     | release/4.0 | 1.9      | Pi Support erweitert |
+| 5.0      | Ubuntu 26.04 (master), PI Coding Agent | release/5.0 | 1.9      | [Readme](https://github.com/nfra-project/kickstart-flavor-jekyll/)                 |
 | unstable | Ubuntu 26.04 (master), PI Coding Agent | main        | unstable | [Readme](https://github.com/nfra-project/kickstart-flavor-jekyll/)                 |
 
 Kickstart uses a fixed version of Ckit to keep the features freeze within
