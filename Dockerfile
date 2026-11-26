@@ -15,5 +15,9 @@ ADD /kickstart /kickstart
 # Do not put env config vars here - put them in prepare.d/
 
 
-RUN chmod -R 755 /kickstart && /kickstart/flavor/build.sh
+# Ubuntu 26.04's uutils env fails to launch shebang-based scripts under arm64 emulation.
+RUN apt-get update \
+    && apt-get install -y --allow-remove-essential coreutils-from-gnu coreutils-from-uutils- \
+    && chmod -R 755 /kickstart \
+    && /kickstart/flavor/build.sh
 ENTRYPOINT ["/kickstart/run/entrypoint.sh"]

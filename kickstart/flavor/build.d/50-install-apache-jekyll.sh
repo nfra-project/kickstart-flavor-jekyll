@@ -10,9 +10,6 @@ apt-get -y install gettext apache2 psmisc \
                    imagemagick ruby-full build-essential zlib1g-dev \
                    php8.5 php8.5-curl php8.5-http php8.5-raphf php8.5-yaml composer linkchecker
 
-# Ubuntu 26.04's uutils env fails to launch shebang-based CLIs under arm64 emulation.
-apt-get install -y --allow-remove-essential coreutils-from-gnu coreutils-from-uutils-
-
 export GEM_HOME="/usr/bin/gems"
 ruby /usr/bin/gem install jekyll bundler jekyll-optional-front-matter jekyll-sitemap jekyll-polyglot jekyll-paginate jekyll-redirect-from jekyll-lazy-load-image
 
@@ -61,4 +58,3 @@ echo 'export OPENAI_API_KEY="$(cat /var/run/secrets/open_ai 2>/dev/null || true)
 
 ## Ubuntu 23.04 -> change user ubuntu to uid 999
 usermod -u 999 ubuntu
-
